@@ -14,6 +14,7 @@ image=input('Input the image in 4.x.x format: ')
 eos_image='EOS-'+image+'.swi'
 print(eos_image)
 
+#check if the imgae is already present in the flash
 if eos_image in dir_op:
     config_commands=['config','boot system flash:'+eos_image]
     #print(config_commands)
