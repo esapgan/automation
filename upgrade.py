@@ -39,4 +39,5 @@ if confirm=='Yes':
 else:
     print('You dont want to reboot, that is fine, connection will be closed')
 
+#close the connection
 connection.disconnect()
