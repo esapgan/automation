@@ -3,7 +3,7 @@
 import netmiko
 import time
 
-
+#connect to a switch
 connection= netmiko.ConnectHandler(ip='10.81.117.55',device_type='arista_eos',username='admin',password='')
 
 print(connection.send_command('show ip int brief'))
