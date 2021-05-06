@@ -30,7 +30,7 @@ else:
     config_commands=['config','boot system flash:'+eos_image]
     connection.send_config_set(config_commands)
 
-
+#check status and reload
 output=connection.send_command('show boot-config')
 print(output)
 confirm=input('Is boot-config looks good, do you want to reload? Enter Yes/No: ')
